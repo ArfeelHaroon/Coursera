@@ -1,0 +1,11 @@
+p.big{
+    color: blueviolet;
+}
+
+article p{
+    color: blue;
+}
+
+article > p{
+    color: orangered;
+}

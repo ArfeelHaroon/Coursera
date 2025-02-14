@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="combining-selectors.css">
+    <title>css combining selectors</title>
+</head>
+<body>
+    <h1>CSS Combining Selectors</h1>
+    <p class="big">
+     Delectus sit nemo temporibus, nesciunt magnam quos molestiae molestias hic error rem dignissimos.
+     Its a &lt;p&gt; tag with class&equals;&quot;big&quot; The Css is applied by &quot;Combining Selectors&quot; which is 
+     <mark> p.big&#123; &#125; </mark>
+    </p>
+    <div class="big">
+        This also have class&equals;&quot;big&quot; but styles don't applyies on it as its a <mark>&lt;div&gt</mark>; not &lt;p&gt; styples only apply on those which have both &lt;p&gt; and class&equals;&quot;big&quot;
+    </div>
+    <hr>
+    <h1>Child Selector</h1>
+    <article>
+        <p>
+            Its a &lt;p&gt; the child of &lt;article&gt;. To select it we use CSS child selector. which is<mark> &quot;article&nbsp;&gt; p&quot;</mark>. It only effects the direct child.
+        </p>
+    </article>
+    <hr>
+    <h1>Descendant Selector</h1>
+    <article>
+        <section>
+            <p>
+                This is a &lt;p&gt; inside a &lt;section&gt;, which is inside an &lt;article&gt;.
+                The Descendant Selector selects all &lt;p&gt; elements inside &lt;article&gt;, regardless of depth.
+                The CSS rule is <mark>"article p { }"</mark>.
+                It applies styles to any &lt;p&gt; inside &lt;article&gt;, even if nested within other elements.
+            </p>
+        </section>
+    </article>
+    <hr>
+    <h3>Not Limited To Element Selectors</h3>
+    <p>we can also use classes, id instead tag while selecting by combining selectors </p>
+    <hr>
+    <h1>Summery</h1>
+    <h3>Combining selectors</h3>
+<ul>
+    <li>Element with class selector (selector. class)</li>
+    <li>Child (direct) selector (selector > selector)</li>
+    <li>Descendent selector (selector selector)</li>
+</ul>
+<h3>Didn't cover</h3>
+<ul>
+    <li>Adjacent sibling selector (selector + selector)</li>
+    <li>General sibling selector (selector — selector)</li>
+</ul>
+<h4>Adjacent Sibling Selector (+)</h4>
+<p>
+    The adjacent sibling selector selects an element that is immediately after a specified element.  
+    Example: <mark>"h2 + p { }"</mark> applies styles to the first &lt;p&gt; that comes right after an &lt;h2&gt;.
+</p>
+
+<h4>General Sibling Selector (~)</h4>
+<p>
+    The general sibling selector selects all elements that are **siblings** of a specified element, not just the immediate one.  
+    Example: <mark>"h2 ~ p { }"</mark> applies styles to **all** &lt;p&gt; elements that follow an &lt;h2&gt;, regardless of position.
+</p>
+</body>
+</html>
