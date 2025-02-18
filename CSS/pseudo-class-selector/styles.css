@@ -1,0 +1,43 @@
+container{
+    display: flex;
+}
+#left{
+    width: 50vw;
+    border-right: 2px solid black;
+    padding: 0 5px 0 5px;
+}
+#right{
+    width: 50vw;
+    border-left: 2px solid black;
+    padding: 0 5px 0 5px;
+}
+header li{
+    list-style: none;
+}
+a:link{
+  text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: pink;
+}
+
+/* nth selector */
+#divs-section div:nth-child(even):hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+#divs-section div:nth-child(odd){
+    background-color: gray;
+}
+
+#divs-section div:nth-child(4):hover{
+    cursor: cell;
+    background-color: greenyellow;
+}
